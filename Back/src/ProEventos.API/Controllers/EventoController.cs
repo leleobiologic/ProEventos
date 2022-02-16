@@ -19,10 +19,7 @@ namespace ProEventos.API.Controllers
         public EventoController(DataContext context)
         {
             _context = context;
-
         }
-
-
 
         [HttpGet]
         public IEnumerable<Evento> Get()

@@ -1,0 +1,224 @@
+<div class="card rounded shadow-lg">
+  <form [formGroup]="form" class="row p-3">
+    <div class="col-md-6">
+      <label for="inputTema" class="form-label"> Tema </label>
+      <input
+        formControlName="tema"
+        [ngClass]="{
+          'is-invalid': f.tema.errors && f.tema.touched
+        }"
+        type="text"
+        class="form-control"
+        id="inputTema"
+        placeholder
+      />
+      <div *ngIf="f.tema.hasError('required')" class="invalid-feedback fw-bold">
+        Esse campo é obrigatório.
+      </div>
+      <div
+        *ngIf="f.tema.hasError('minlength')"
+        class="invalid-feedback fw-bold"
+      >
+        Tema deve conter mais que 4 Letras.
+      </div>
+      <div
+        *ngIf="f.tema.hasError('maxlength')"
+        class="invalid-feedback fw-bold"
+      >
+        Tema deve conter menos que 50 Letras.
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="inputEmail" class="form-label"> E-mail </label>
+      <input
+        formControlName="email"
+        [ngClass]="{
+          'is-invalid': f.email.errors && f.email.touched
+        }"
+        type="email"
+        class="form-control is-invalid"
+        id="inputEmail"
+        placeholder
+      />
+
+      <div
+        *ngIf="f.email.hasError('required')"
+        class="invalid-feedback fw-bold"
+      >
+        Esse campo é obrigatório.
+      </div>
+      <div *ngIf="f.email.hasError('email')" class="invalid-feedback fw-bold">
+        Digite um E-mail válido!.
+      </div>
+    </div>
+    <div class="col-12">
+      <label for="inputLocal" class="form-label"> Local </label>
+      <input
+        formControlName="local"
+        [ngClass]="{
+          'is-invalid': f.local.errors && f.local.touched
+        }"
+        type="text"
+        class="form-control is-invalid"
+        id="inputLocal"
+        placeholder="Local do Evento"
+      />
+      <div
+        *ngIf="f.local.hasError('required')"
+        class="invalid-feedback fw-bold"
+      >
+        Esse campo é obrigatório.
+      </div>
+      <div
+        *ngIf="f.local.hasError('minlength')"
+        class="invalid-feedback fw-bold"
+      >
+        Local deve conter mais que 8 Letras.
+      </div>
+      <div
+        *ngIf="f.local.hasError('maxlength')"
+        class="invalid-feedback fw-bold"
+      >
+        Local deve conter menos que 50 Letras.
+      </div>
+    </div>
+    <div class="col-md-2">
+      <label for="inputQtdPessoas" class="form-label"> Qtd Pessoas </label>
+      <input
+        formControlName="qtdPessoas"
+        [ngClass]="{
+          'is-invalid': f.qtdPessoas.errors && f.qtdPessoas.touched
+        }"
+        type="text"
+        class="form-control is-invalid"
+        id="inputQtdPessoas"
+        placeholder="Quantidade de pessoas"
+      />
+      <div
+        *ngIf="f.qtdPessoas.hasError('required')"
+        class="invalid-feedback fw-bold"
+      >
+        Esse campo é obrigatório.
+      </div>
+      <div
+        *ngIf="f.qtdPessoas.hasError('min')"
+        class="invalid-feedback fw-bold"
+      >
+        A quatidade de pessoas tem que ser maior que 50.
+      </div>
+      <div
+        *ngIf="f.qtdPessoas.hasError('max')"
+        class="invalid-feedback fw-bold"
+      >
+        A quatidade de pessoas tem que ser menor que 1000.
+      </div>
+    </div>
+    <div class="col-md-2">
+      <label for="inputTelefone" class="form-label"> Telefone </label>
+      <input
+        formControlName="telefone"
+        [ngClass]="{
+          'is-invalid': f.telefone.errors && f.telefone.touched
+        }"
+        type="number"
+        class="form-control is-invalid"
+        id="inputTelefone"
+        placeholder
+      />
+      <div
+        *ngIf="f.telefone.hasError('required')"
+        class="invalid-feedback fw-bold"
+      >
+        Esse campo é obrigatório.
+      </div>
+      <div
+        *ngIf="f.telefone.hasError('minlength')"
+        class="invalid-feedback fw-bold"
+      >
+        Tema deve conter mais que 4 Letras.
+      </div>
+      <div
+        *ngIf="f.telefone.hasError('maxlength')"
+        class="invalid-feedback fw-bold"
+      >
+        Tema deve conter menos que 50 Letras.
+      </div>
+    </div>
+    <div class="col-md-2">
+      <label for="inputData" class="form-label"> Data </label>
+      <input
+        formControlName="dataEvento"
+        [ngClass]="{
+          'is-invalid': f.dataEvento.errors && f.dataEvento.touched
+        }"
+        type="number"
+        class="form-control is-invalid"
+        id="inputData"
+        placeholder
+      />
+      <div
+        *ngIf="f.dataEvento.hasError('required')"
+        class="invalid-feedback fw-bold"
+      >
+        Esse campo é obrigatório.
+      </div>
+      <div
+        *ngIf="f.dataEvento.hasError('minlength')"
+        class="invalid-feedback fw-bold"
+      >
+        Tema deve conter mais que 4 Letras.
+      </div>
+      <div
+        *ngIf="f.dataEvento.hasError('maxlength')"
+        class="invalid-feedback fw-bold"
+      >
+        Tema deve conter menos que 50 Letras.
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="inputZip" class="form-label"> Imagem </label>
+      <input
+        formControlName="imagemURL"
+        [ngClass]="{
+          'is-invalid': f.imagemURL.errors && f.imagemURL.touched
+        }"
+        type="text"
+        class="form-control is-invalid"
+        id="inputZip"
+        placeholder
+      />
+      <div
+        *ngIf="f.imagemURL.hasError('required')"
+        class="invalid-feedback fw-bold"
+      >
+        Esse campo é obrigatório.
+      </div>
+      <div
+        *ngIf="f.imagemURL.hasError('minlength')"
+        class="invalid-feedback fw-bold"
+      >
+        Tema deve conter mais que 4 Letras.
+      </div>
+      <div
+        *ngIf="f.imagemURL.hasError('maxlength')"
+        class="invalid-feedback fw-bold"
+      >
+        Tema deve conter menos que 50 Letras.
+      </div>
+    </div>
+    <div class="card-footer pt-3">
+      <div class="d-flex">
+        <button
+          class="btn btn-outline-secondary mr-auto border"
+          (click)="resetForm()"
+        >
+          Cancelar Alteração
+        </button>
+        <button class="btn btn-success ms-auto" [disabled]="!form.valid">
+          <span class="spinner-border spinner-border-sm mr-1"></span>
+          Salvar Evento
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

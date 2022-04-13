@@ -34,7 +34,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/ngx-toastr/toastr.css",
+              "node_modules/ngx-spinner/animations/ball-scale-multiple.css",
+              "node_modules/ngx-spinner/animations/ball-circus.css",
+              "node_modules/ngx-spinner/animations/timer.css"
+
             ],
             "scripts": []
           },
@@ -102,7 +107,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/ngx-toastr/toastr.css",
+              "node_modules/ngx-spinner/animations/ball-scale-multiple.css",
+              "node_modules/ngx-spinner/animations/ball-circus.css",
+              "node_modules/ngx-spinner/animations/timer.css"
             ],
             "scripts": []
           }

@@ -17,6 +17,7 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { ToastrModule } from 'ngx-toastr';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { CurrencyMaskInputMode, NgxCurrencyModule } from "ngx-currency";
 import { CommonModule } from "@angular/common";
 import { ContatosComponent } from "./components/contatos/contatos.component";
 import { DashboardComponent } from "./components/dashboard/dashboard.component";
@@ -27,6 +28,26 @@ import { EventoListaComponent } from './components/eventos/evento-lista/evento-l
 import { LoginComponent } from './components/user/login/login.component';
 import { UserComponent } from './components/user/user.component';
 import { RegistrationComponent } from './components/user/registration/registration.component';
+import{ BsDatepickerModule} from 'ngx-bootstrap/datepicker';
+import { TimepickerModule } from 'ngx-bootstrap/timepicker';
+import { HourFormatPipePipe } from "./helpers/HourFormatPipe.pipe";
+import { LoteService } from "./services/lote.service";
+
+export const customCurrencyMaskConfig = {
+  align: "left",
+  allowNegative: true,
+  allowZero: true,
+  decimal: ",",
+  precision: 2,
+  prefix: "R$ ",
+  suffix: "",
+  thousands: ".",
+  nullable: true,
+  min: null,
+  max: null,
+  inputMode: CurrencyMaskInputMode.FINANCIAL
+};
+
 
 
 @NgModule({
@@ -34,6 +55,7 @@ import { RegistrationComponent } from './components/user/registration/registrati
     AppComponent,
     NavComponent,
     DateTimeFormatPipe,
+    HourFormatPipePipe,
     EventosComponent,
     PalestrantesComponent,
     ContatosComponent,
@@ -45,6 +67,7 @@ import { RegistrationComponent } from './components/user/registration/registrati
     LoginComponent,
     UserComponent,
     RegistrationComponent,
+
   ],
   imports: [
     ReactiveFormsModule,
@@ -52,12 +75,15 @@ import { RegistrationComponent } from './components/user/registration/registrati
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    BsDatepickerModule.forRoot(),
     CollapseModule.forRoot(),
     FormsModule,
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
     ModalModule.forRoot(),
+    TimepickerModule.forRoot(),
     NgxSpinnerModule,
+    NgxCurrencyModule.forRoot(customCurrencyMaskConfig),
     CommonModule,
     ToastrModule.forRoot({
       timeOut: 5000,
@@ -68,7 +94,8 @@ import { RegistrationComponent } from './components/user/registration/registrati
     }),
   ],
   providers: [
-    EventoService
+    EventoService,
+    LoteService
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

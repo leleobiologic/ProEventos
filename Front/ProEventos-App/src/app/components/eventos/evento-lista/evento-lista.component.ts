@@ -20,6 +20,7 @@ export class EventoListaComponent implements OnInit {
   public marginImg: number = 0;
   public mostrarImagem: boolean = true;
   public _filtroLista: string = '';
+  public  eventoId = 0;
 
   public get filtroLista(): string {
     return this._filtroLista;
@@ -48,11 +49,9 @@ export class EventoListaComponent implements OnInit {
         this.eventosFiltrados = this.eventos;
       },
       error: (error: any) => {
-        this.spinner.hide();
         this.toastr.error('Erro ao Carregar os Eventos', 'Error!')
-      },
-      complete: () => this.spinner.hide()
-    });
+      }
+    }).add(() => this.spinner.hide());
   }
 
   public alterarImagem(): void {
@@ -71,13 +70,28 @@ export class EventoListaComponent implements OnInit {
     this.spinner.show();
   }
 
-  public openModal(template: TemplateRef<any>): void {
+  public openModal(event: any, template: TemplateRef<any>, eventoId: number): void {
+    event.stopPropagation();
+    this.eventoId = eventoId;
     this.modalRef = this.modalService.show(template, { class: 'modal-sm' });
   }
 
   public confirm(): void {
-    this.modalRef.hide();
-    this.toastr.success('Esse evento foi deletado com sucesso!', 'DELETADO!')
+    this.spinner.show();
+
+    this.eventoService.deleteEvento(this.eventoId).subscribe({
+      next: (result: any) => {
+          if (result.message === 'Deletado'){
+          this.toastr.success(`Evento Numero: ${this.eventoId},  foi deletado com sucesso!`, 'DELETADO!');
+          this.modalRef.hide();
+          this.getEventos();
+        }
+      },
+      error: (error: any) => {
+        this.toastr.error(`Erro ao Deletar Evento Numero: ${this.eventoId}`, 'Error!')
+        console.error(error)
+      }
+    }).add(() => this.spinner.hide());
   }
 
   public decline(): void {

@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ProEventos\\Back\\src\\ProEventos.API\\ProEventos.API.csproj": {}
+    "D:\\ProEventos\\Back\\src\\ProEventos.API\\ProEventos.API.csproj": {}
   },
   "projects": {
-    "C:\\ProEventos\\Back\\src\\ProEventos.API\\ProEventos.API.csproj": {
+    "D:\\ProEventos\\Back\\src\\ProEventos.API\\ProEventos.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProEventos\\Back\\src\\ProEventos.API\\ProEventos.API.csproj",
+        "projectUniqueName": "D:\\ProEventos\\Back\\src\\ProEventos.API\\ProEventos.API.csproj",
         "projectName": "ProEventos.API",
-        "projectPath": "C:\\ProEventos\\Back\\src\\ProEventos.API\\ProEventos.API.csproj",
-        "packagesPath": "C:\\Users\\leleo\\.nuget\\packages\\",
-        "outputPath": "C:\\ProEventos\\Back\\src\\ProEventos.API\\obj\\",
+        "projectPath": "D:\\ProEventos\\Back\\src\\ProEventos.API\\ProEventos.API.csproj",
+        "packagesPath": "C:\\Users\\Leonardo TI\\.nuget\\packages\\",
+        "outputPath": "D:\\ProEventos\\Back\\src\\ProEventos.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\leleo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Leonardo TI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -33,8 +31,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\ProEventos\\Back\\src\\ProEventos.Application\\ProEventos.Application.csproj": {
-                "projectPath": "C:\\ProEventos\\Back\\src\\ProEventos.Application\\ProEventos.Application.csproj"
+              "D:\\ProEventos\\Back\\src\\ProEventos.Application\\ProEventos.Application.csproj": {
+                "projectPath": "D:\\ProEventos\\Back\\src\\ProEventos.Application\\ProEventos.Application.csproj"
               }
             }
           }
@@ -104,23 +102,21 @@
         }
       }
     },
-    "C:\\ProEventos\\Back\\src\\ProEventos.Application\\ProEventos.Application.csproj": {
+    "D:\\ProEventos\\Back\\src\\ProEventos.Application\\ProEventos.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProEventos\\Back\\src\\ProEventos.Application\\ProEventos.Application.csproj",
+        "projectUniqueName": "D:\\ProEventos\\Back\\src\\ProEventos.Application\\ProEventos.Application.csproj",
         "projectName": "ProEventos.Application",
-        "projectPath": "C:\\ProEventos\\Back\\src\\ProEventos.Application\\ProEventos.Application.csproj",
-        "packagesPath": "C:\\Users\\leleo\\.nuget\\packages\\",
-        "outputPath": "C:\\ProEventos\\Back\\src\\ProEventos.Application\\obj\\",
+        "projectPath": "D:\\ProEventos\\Back\\src\\ProEventos.Application\\ProEventos.Application.csproj",
+        "packagesPath": "C:\\Users\\Leonardo TI\\.nuget\\packages\\",
+        "outputPath": "D:\\ProEventos\\Back\\src\\ProEventos.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\leleo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Leonardo TI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -133,11 +129,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\ProEventos\\Back\\src\\ProEventos.Domain\\ProEventos.Domain.csproj": {
-                "projectPath": "C:\\ProEventos\\Back\\src\\ProEventos.Domain\\ProEventos.Domain.csproj"
+              "D:\\ProEventos\\Back\\src\\ProEventos.Domain\\ProEventos.Domain.csproj": {
+                "projectPath": "D:\\ProEventos\\Back\\src\\ProEventos.Domain\\ProEventos.Domain.csproj"
               },
-              "C:\\ProEventos\\Back\\src\\ProEventos.Persistence\\ProEventos.Persistence.csproj": {
-                "projectPath": "C:\\ProEventos\\Back\\src\\ProEventos.Persistence\\ProEventos.Persistence.csproj"
+              "D:\\ProEventos\\Back\\src\\ProEventos.Persistence\\ProEventos.Persistence.csproj": {
+                "projectPath": "D:\\ProEventos\\Back\\src\\ProEventos.Persistence\\ProEventos.Persistence.csproj"
               }
             }
           }
@@ -176,23 +172,21 @@
         }
       }
     },
-    "C:\\ProEventos\\Back\\src\\ProEventos.Domain\\ProEventos.Domain.csproj": {
+    "D:\\ProEventos\\Back\\src\\ProEventos.Domain\\ProEventos.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProEventos\\Back\\src\\ProEventos.Domain\\ProEventos.Domain.csproj",
+        "projectUniqueName": "D:\\ProEventos\\Back\\src\\ProEventos.Domain\\ProEventos.Domain.csproj",
         "projectName": "ProEventos.Domain",
-        "projectPath": "C:\\ProEventos\\Back\\src\\ProEventos.Domain\\ProEventos.Domain.csproj",
-        "packagesPath": "C:\\Users\\leleo\\.nuget\\packages\\",
-        "outputPath": "C:\\ProEventos\\Back\\src\\ProEventos.Domain\\obj\\",
+        "projectPath": "D:\\ProEventos\\Back\\src\\ProEventos.Domain\\ProEventos.Domain.csproj",
+        "packagesPath": "C:\\Users\\Leonardo TI\\.nuget\\packages\\",
+        "outputPath": "D:\\ProEventos\\Back\\src\\ProEventos.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\leleo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Leonardo TI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -235,23 +229,21 @@
         }
       }
     },
-    "C:\\ProEventos\\Back\\src\\ProEventos.Persistence\\ProEventos.Persistence.csproj": {
+    "D:\\ProEventos\\Back\\src\\ProEventos.Persistence\\ProEventos.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProEventos\\Back\\src\\ProEventos.Persistence\\ProEventos.Persistence.csproj",
+        "projectUniqueName": "D:\\ProEventos\\Back\\src\\ProEventos.Persistence\\ProEventos.Persistence.csproj",
         "projectName": "ProEventos.Persistence",
-        "projectPath": "C:\\ProEventos\\Back\\src\\ProEventos.Persistence\\ProEventos.Persistence.csproj",
-        "packagesPath": "C:\\Users\\leleo\\.nuget\\packages\\",
-        "outputPath": "C:\\ProEventos\\Back\\src\\ProEventos.Persistence\\obj\\",
+        "projectPath": "D:\\ProEventos\\Back\\src\\ProEventos.Persistence\\ProEventos.Persistence.csproj",
+        "packagesPath": "C:\\Users\\Leonardo TI\\.nuget\\packages\\",
+        "outputPath": "D:\\ProEventos\\Back\\src\\ProEventos.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\leleo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Leonardo TI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -264,8 +256,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\ProEventos\\Back\\src\\ProEventos.Domain\\ProEventos.Domain.csproj": {
-                "projectPath": "C:\\ProEventos\\Back\\src\\ProEventos.Domain\\ProEventos.Domain.csproj"
+              "D:\\ProEventos\\Back\\src\\ProEventos.Domain\\ProEventos.Domain.csproj": {
+                "projectPath": "D:\\ProEventos\\Back\\src\\ProEventos.Domain\\ProEventos.Domain.csproj"
               }
             }
           }

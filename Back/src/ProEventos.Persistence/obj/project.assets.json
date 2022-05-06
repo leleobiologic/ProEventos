@@ -774,27 +774,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\leleo\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\Leonardo TI\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ProEventos\\Back\\src\\ProEventos.Persistence\\ProEventos.Persistence.csproj",
+      "projectUniqueName": "D:\\ProEventos\\Back\\src\\ProEventos.Persistence\\ProEventos.Persistence.csproj",
       "projectName": "ProEventos.Persistence",
-      "projectPath": "C:\\ProEventos\\Back\\src\\ProEventos.Persistence\\ProEventos.Persistence.csproj",
-      "packagesPath": "C:\\Users\\leleo\\.nuget\\packages\\",
-      "outputPath": "C:\\ProEventos\\Back\\src\\ProEventos.Persistence\\obj\\",
+      "projectPath": "D:\\ProEventos\\Back\\src\\ProEventos.Persistence\\ProEventos.Persistence.csproj",
+      "packagesPath": "C:\\Users\\Leonardo TI\\.nuget\\packages\\",
+      "outputPath": "D:\\ProEventos\\Back\\src\\ProEventos.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\leleo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Leonardo TI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -807,8 +804,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\ProEventos\\Back\\src\\ProEventos.Domain\\ProEventos.Domain.csproj": {
-              "projectPath": "C:\\ProEventos\\Back\\src\\ProEventos.Domain\\ProEventos.Domain.csproj"
+            "D:\\ProEventos\\Back\\src\\ProEventos.Domain\\ProEventos.Domain.csproj": {
+              "projectPath": "D:\\ProEventos\\Back\\src\\ProEventos.Domain\\ProEventos.Domain.csproj"
             }
           }
         }

@@ -2,22 +2,18 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-<<<<<<< HEAD
-using ProEventos.Persistence.Contexto;
-
-=======
 using ProEventos.Persistence;
 using ProEventos.Persistence.Contexto;
 
-
->>>>>>> def0d00b0af464805899f58ef257c54b5108b636
 namespace ProEventos.Persistence.Migrations
 {
     [DbContext(typeof(ProEventosContext))]
-    partial class ProEventosContextModelSnapshot : ModelSnapshot
+    [Migration("20220323002836_Initial")]
+    partial class Initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -188,21 +184,11 @@ namespace ProEventos.Persistence.Migrations
                 {
                     b.HasOne("ProEventos.Domain.Evento", "Evento")
                         .WithMany("RedesSociais")
-<<<<<<< HEAD
-                        .HasForeignKey("EventoId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("ProEventos.Domain.Palestrante", "Palestrante")
-                        .WithMany("RedesSociais")
-                        .HasForeignKey("PalestranteId")
-                        .OnDelete(DeleteBehavior.Cascade);
-=======
                         .HasForeignKey("EventoId");
 
                     b.HasOne("ProEventos.Domain.Palestrante", "Palestrante")
                         .WithMany("RedesSociais")
                         .HasForeignKey("PalestranteId");
->>>>>>> def0d00b0af464805899f58ef257c54b5108b636
 
                     b.Navigation("Evento");
 

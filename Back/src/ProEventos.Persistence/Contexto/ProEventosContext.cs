@@ -5,7 +5,10 @@ namespace ProEventos.Persistence.Contexto
 {
     public class ProEventosContext : DbContext
     {
+<<<<<<< HEAD
         
+=======
+>>>>>>> def0d00b0af464805899f58ef257c54b5108b636
         public ProEventosContext(DbContextOptions<ProEventosContext> options) : base(options) { }
         public DbSet<Evento> Eventos { get; set; }
         public DbSet<Lote> Lotes { get; set; }

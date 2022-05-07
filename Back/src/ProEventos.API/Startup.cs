@@ -10,8 +10,11 @@ using ProEventos.Application.Contratos;
 using ProEventos.Persistence;
 using ProEventos.Persistence.Contexto;
 using ProEventos.Persistence.Contratos;
+<<<<<<< HEAD
 using AutoMapper;
 using System;
+=======
+>>>>>>> def0d00b0af464805899f58ef257c54b5108b636
 
 namespace ProEventos.API
 {
@@ -35,6 +38,7 @@ namespace ProEventos.API
             services.AddControllers()
                     .AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling =
                     Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+<<<<<<< HEAD
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddScoped<IEventosService, EventoService>();
             services.AddScoped<ILoteService, LoteService>();
@@ -42,6 +46,11 @@ namespace ProEventos.API
             services.AddScoped<IEventoPersist, EventoPersist>();
             services.AddScoped<ILotePersist, LotePersist>();
 
+=======
+            services.AddScoped<IEventosService, EventoService>();
+            services.AddScoped<IGeralPersist, GeralPersist>();
+            services.AddScoped<IEventoPersist, EventoPersist>();
+>>>>>>> def0d00b0af464805899f58ef257c54b5108b636
             services.AddCors();
             services.AddSwaggerGen(c =>
             {
